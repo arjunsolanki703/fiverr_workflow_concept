@@ -20,7 +20,7 @@
           <font-awesome-icon :icon="['far', 'clock']" /> {{res.time}}
         </div>
         <div class="order-hours">
-          {{res.hours}} | <span class="color-black">{{res.price}}</span>
+          <span v-if="res.hasOwnProperty('hours')">{{res.hours}} | </span><span class="color-black">{{res.price}}</span>
         </div>
       </div>
     </div>
